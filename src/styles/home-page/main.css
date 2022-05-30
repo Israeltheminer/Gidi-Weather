@@ -1,5 +1,11 @@
+@custom-media --bp-sm-laptop (width <= 1000px);
+@custom-media --bp-tablet (width <= 750px);
+@custom-media --bp-mobile (width <= 500px);
+@custom-media --bp-md-mobile (width <= 380px);
+@custom-media --bp-sm-mobile (width <= 320px);
+
 .current-weather{
-   margin: 0 2rem 1rem;
+   margin: 2rem 3rem;
 
    & .location{
       font-weight: 800;
@@ -17,6 +23,7 @@
    justify-content: center;
 	gap: 15px;
 	position: relative;
+	padding: inherit 3rem;
 
 	& .airplane{
 		position: absolute;
@@ -36,6 +43,55 @@
    }
 }
 
+@media(--bp-sm-laptop){
+	.deco-container{
+		margin-top: 6rem;
+	}
+}
+
+@media(--bp-tablet){
+	.deco-container{
+		margin-top: 8rem;
+	}
+	.sky-deco{
+
+		& .airplane{
+			top: 10%;
+		}
+
+		& .birds{
+			top: 50%;
+			right: 20%;
+		}
+	}
+}
+
+@media(--bp-mobile){
+	.deco-container{
+		
+		& .sky-deco{
+			
+			& .birds{
+				top: 50%;
+				right: 20%;
+			}
+
+			& .hide-cloud{
+				display: none;
+			}
+		}
+
+		& .floor-deco{
+			margin-top: 4rem;
+		}
+	}
+	.theatre.mySlides{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}	
+}
+
+
 .floor-deco{
 	display: flex;
    justify-content: center;
@@ -43,7 +99,8 @@
 
 .all-locations{
 	display: grid;
-	grid-template-columns: repeat(6, minmax(0, 1fr));
+	grid-template-columns: repeat(6, minmax(200px, 1fr));
+	overflow-x: scroll;
 
 	& .location-box{
 		display: grid;
