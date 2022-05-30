@@ -5,7 +5,7 @@ const axios = require('axios')
 const cors = require('cors')
 const path = require('path');
 const { json } = require("express/lib/response");
-const port = 1500
+const port = process.env.PORT || 1500
 
 const DIST = path.join(__dirname , "./dist")
 const homePage = path.join(DIST, "index.html")
@@ -117,7 +117,8 @@ app.get('/result', (request, response)=> {
          response.json(allWeather)
       }))
       .catch(errors => {
-         console.log("Error getting weather")
+         console.log("Unable to fetch weather")
+         console.log(errors)
       })
 })
 app.listen(port, ()=>{
