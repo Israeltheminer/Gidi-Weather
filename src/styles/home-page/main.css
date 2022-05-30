@@ -100,7 +100,6 @@
 .all-locations{
 	display: grid;
 	grid-template-columns: repeat(6, minmax(200px, 1fr));
-	overflow-x: scroll;
 
 	& .location-box{
 		display: grid;
@@ -110,6 +109,15 @@
 		opacity: 0.3;
 	}
 }
+.all-locations::-webkit-scrollbar {
+	display: none;
+ }
+ 
+ /* Hide scrollbar for IE, Edge and Firefox */
+ .all-locations {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+ }
 
 
 .location-box:focus{
