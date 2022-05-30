@@ -102,14 +102,14 @@ fetch('http://localhost:1500/result')
       
       // Day-time Conditions
       if(hour >= 3 && hour <= 18){
-         $('#current_time_icon').attr('src', './assets/sun-cloud.svg')
+         $('#current_time_icon').attr('src', 'dist/assets/sun-cloud.svg')
       }
       // Night-time Conditions
       else{
-         $('#current_time_icon').attr('src', './assets/night-cloud.svg')
-         $('.airplane').attr('src', './assets/darkmode-airplane.svg')
-         $('.c-3').attr('src', './assets/darkmode-clouds3.svg')
-         $('.birds').attr('src', './assets/darkmode-birds.svg')
+         $('#current_time_icon').attr('src', 'dist/assets/night-cloud.svg')
+         $('.airplane').attr('src', 'dist/assets/darkmode-airplane.svg')
+         $('.c-3').attr('src', 'dist/assets/darkmode-clouds3.svg')
+         $('.birds').attr('src', 'dist/assets/darkmode-birds.svg')
          $('body').css('color', '#eee')
          $('body').css('background-image', 'linear-gradient(#001449,#242F9B,#097b70)')
       }
