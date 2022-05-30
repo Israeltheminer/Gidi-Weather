@@ -107,10 +107,7 @@ fetch('http://localhost:1500/result')
       // Night-time Conditions
       else{
          $('#current_time_icon').attr('src', 'dist/assets/night-cloud.svg')
-         $('.airplane').attr('src', 'dist/assets/darkmode-airplane.svg')
-         $('.c-3').attr('src', 'dist/assets/darkmode-clouds3.svg')
-         $('.birds').attr('src', 'dist/assets/darkmode-birds.svg')
-         $('body').css('color', '#eee')
-         $('body').css('background-image', 'linear-gradient(#001449,#242F9B,#097b70)')
+         $('body').css('background-image', 'linear-gradient(#1a354a,#373954,#a44a58)')
+         $('body').css('background-color', '#a44a58')
       }
    })
