@@ -1,0 +1,24 @@
+body{
+   font-family: 'Raleway', sans-serif;
+
+}
+
+.massive{
+   font-size: 70px;
+   line-height: 1.5;
+}
+
+.large{
+   font-size: 40px;
+}
+
+.base-text{
+   font-size: 20px;
+   line-height: 2;
+}
+
+.small-text{
+   font-size: 15px;
+   line-height: 2;
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gidi Weather</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+   <link rel="manifest" href="./assets/favicon/site.webmanifest">
+   <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+
+   <div class="current-weather">
+      <div class="temp-box">
+         <div class="">
+            <h1 class="massive" id="current_temp" name="current-temp">
+               -
+            </h1>
+         </div>
+         <div class="">
+            <img id="current_time_icon" class='w-[4rem]' src="./assets/sun-cloud.svg">
+         </div>
+      </div>
+      <p id="current_location" class="location">-</p>
+      <p id="current_weather" class="weather-desc small-text">-</p>
+   </div>
+
+   <div class="deco-container">
+      <div class="sky-deco">
+         <div>
+            <img class="clouds w-[4rem] c-3 relative top-[30px]" src="./assets/cloud3.svg">
+         </div>
+         <div>
+            <img class="clouds w-[3.5rem] c-1 relative bottom-[50px]" src="./assets/clouds1.svg">
+         </div>
+         <div>
+            <img class="clouds w-[3.5rem] c-3 relative top-[15px]" src="./assets/cloud3.svg">
+         </div>
+         <div>
+            <img class="clouds w-[4rem] c-2 relative bottom-[65px]" src="./assets/cloud2.svg">
+         </div>
+         <div>
+            <img class="clouds w-[3.5rem] c-1 relative top-[40px]" src="./assets/clouds1.svg">
+         </div>
+         <div>
+            <img class="clouds w-[3.5rem] c-2 relative bottom-[50px]" src="./assets/cloud2.svg">
+         </div>
+         <div>
+            <img class="clouds w-[4rem] c-3 relative top-[2px]" src="./assets/cloud3.svg">
+         </div>
+         <img class='airplane w-[2rem]' src="./assets/airplane.svg">
+         <img class='birds w-[5rem]' src="./assets/birds.svg">
+      </div>
+
+      <div class="floor-deco">
+         <div class="danfo-box">
+            <img class="danfo mySlides w-[22.5rem]" src="./assets/location-images/danfo.png" alt="">
+            <img class="theatre mySlides w-[22.5rem]" src="./assets/location-images/theatre.png" alt="">
+         </div>
+      </div>
+   </div>
+
+   <div class="all-locations">
+
+      <div tabindex="0" id="lagos_tab" class="location-box">
+         <div>
+            <p class="base-text font-bold">Lagos</p>
+         </div>
+         <div class="py-[1rem]">
+            <img id="lagos_icon" class="w-[5rem]" src="./assets/night-cloud.svg">
+         </div>
+         <div>
+            <p id="lagos_temp" class="large">-</p>
+         </div>
+      </div>
+
+      <div tabindex="0" id="surulere_tab" class="location-box">
+         <div>
+            <p class="base-text font-bold">Surulere</p>
+         </div>
+         <div class="py-[1rem]">
+            <img id="surulere_icon" class="w-[5rem]" src="./assets/night-cloud.svg">
+         </div>
+         <div>
+            <p id="surulere_temp" class="large">-</p>
+         </div>
+      </div>
+
+      <div tabindex="0" id="ikeja_tab" class="location-box">
+         <div>
+            <p class="base-text font-bold">Ikeja</p>
+         </div>
+         <div class="py-[1rem]">
+            <img id="ikeja_icon" class="w-[5rem]" src="./assets/night-cloud.svg">
+         </div>
+         <div>
+            <p id="ikeja_temp" class="large">-</p>
+         </div>
+      </div>
+
+      <div tabindex="0" id="lekki_tab" class="location-box">
+         <div>
+            <p class="base-text font-bold">Lekki</p>
+         </div>
+         <div class="py-[1rem]">
+            <img id="lekki_icon" class="w-[5rem]" src="./assets/night-cloud.svg">
+         </div>
+         <div>
+            <p id="lekki_temp" class="large">-</p>
+         </div>
+      </div>
+
+      <div tabindex="0" id="oshodi_tab" class="location-box">
+         <div>
+            <p class="base-text font-bold">Oshodi</p>
+         </div>
+         <div class="py-[1rem]">
+            <img id="oshodi_icon" class="w-[5rem]" src="./assets/night-cloud.svg">
+         </div>
+         <div>
+            <p id="oshodi_temp" class="large">-</p>
+         </div>
+      </div>
+
+      <div tabindex="0" id="ikorodu_tab" class="location-box">
+         <div>
+            <p class="base-text font-bold">Ikorodu</p>
+         </div>
+         <div class="py-[1rem]">
+            <img id="ikorodu_icon" class="w-[5rem]" src="./assets/night-cloud.svg">
+         </div>
+         <div>
+            <p id="ikorodu_temp" class="large">-</p>
+         </div>
+      </div>
+   </div>
+
+   <script src="./scripts/main.js"></script>
+</body>
+</html>

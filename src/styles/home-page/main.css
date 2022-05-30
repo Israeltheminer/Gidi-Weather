@@ -1,0 +1,60 @@
+.current-weather{
+   margin: 0 2rem 1rem;
+
+   & .location{
+      font-weight: 800;
+   }
+}
+
+.temp-box{
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.sky-deco{
+   display: flex;
+   justify-content: center;
+	gap: 15px;
+	position: relative;
+
+	& .airplane{
+		position: absolute;
+		left: 40%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	& .birds{
+		position: absolute;
+		right: 39%;
+		top: 20%;
+		transform: translate(-50%, -50%);
+	}
+
+   & .c-3{
+      opacity: 0.7;
+   }
+}
+
+.floor-deco{
+	display: flex;
+   justify-content: center;
+}
+
+.all-locations{
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+
+	& .location-box{
+		display: grid;
+		justify-content: center;
+		text-align: center;
+		border: 2px solid #DDDDDD;
+		opacity: 0.3;
+	}
+}
+
+
+.location-box:focus{
+	opacity: 1;
+}

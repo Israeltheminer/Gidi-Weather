@@ -1,0 +1,2 @@
+@import "main.css";
+@import-glob "../general/**/*.css";
