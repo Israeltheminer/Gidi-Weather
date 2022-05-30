@@ -15,7 +15,7 @@ function carousel() {
    setTimeout(carousel, 15000); // Change image every 1,5 seconds
 }
 
-fetch('http://localhost:1500/result')
+fetch('https://gidi-weather.herokuapp.com/result')
    .then((response)=> response.json())
    .then((data)=> {
       const lagosWeatherDescription = data[0].lagosWeatherDescription
