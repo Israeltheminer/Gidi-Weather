@@ -7,11 +7,10 @@ const path = require('path');
 const { json } = require("express/lib/response");
 const port = process.env.PORT || 1500
 
-const DIST = path.join(__dirname , "./dist")
-const homePage = path.join(DIST, "index.html")
+const DIST = path.join(__dirname , "dist")
 
 app.use(cors())
-app.use('/dist', express.static(DIST))
+app.use(express.static(DIST))
 
 const LAGOSWEATHERURL = 'https://api.openweathermap.org/data/2.5/weather?lat=6.4&lon=3.4&appid=6b1bc55220d61da67b1090c4f6fb9d6d&units=metric'
 const SURULEREWEATHERURL = 'https://api.openweathermap.org/data/2.5/weather?lat=6.499&lon=3.349&appid=6b1bc55220d61da67b1090c4f6fb9d6d&units=metric'
@@ -20,9 +19,6 @@ const LEKKIWEATHERURL = 'https://api.openweathermap.org/data/2.5/weather?lat=6.4
 const OSHODIWEATHERURL = 'https://api.openweathermap.org/data/2.5/weather?lat=6.553&lon=3.341&appid=6b1bc55220d61da67b1090c4f6fb9d6d&units=metric'
 const IKORODUWEATHERURL = 'https://api.openweathermap.org/data/2.5/weather?lat=6.614&lon=3.502&appid=6b1bc55220d61da67b1090c4f6fb9d6d&units=metric'
 
-app.get('/', (request, response)=>{
-   response.sendFile(homePage)
-})
 
 app.get('/result', (request, response)=> {
    const reqLagos = axios.get(LAGOSWEATHERURL);

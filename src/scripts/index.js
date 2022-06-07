@@ -102,11 +102,11 @@ fetch('https://gidi-weather.herokuapp.com/result')
       
       // Day-time Conditions
       if(hour >= 3 && hour <= 18){
-         $('#current_time_icon').attr('src', 'dist/assets/sun-cloud.svg')
+         $('#current_time_icon').attr('src', './assets/sun-cloud.svg')
       }
       // Night-time Conditions
       else{
-         $('#current_time_icon').attr('src', 'dist/assets/night-cloud.svg')
+         $('#current_time_icon').attr('src', './assets/night-cloud.svg')
          $('body').css('background-image', 'linear-gradient(#1a354a,#373954,#a44a58)')
          $('body').css('background-color', '#a44a58')
       }
